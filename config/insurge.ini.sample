@@ -2,7 +2,7 @@
 
 ; General configuration options for your installation of Insurge.
 [insurge_config]
-dsn_file 					= "/home/jblyberg/dev/dsn/locum.php"
+dsn_file 					= "/usr/local/etc/dsn.php"
 
 ; This is where you configure your repository membership information.
 ; 
