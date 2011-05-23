@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `insurge_history` (
   `codate` datetime NOT NULL,
   `title` text,
   `author` text,
-  `added` datetime NOT NULL
+  `added` datetime NOT NULL,
   PRIMARY KEY  (`hist_id`),
   KEY `repos_id` (`repos_id`,`group_id`,`uid`,`bnum`,`codate`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Tracks patron check-out history';
@@ -105,6 +105,7 @@ CREATE TABLE IF NOT EXISTS `insurge_tags` (
   `group_id` char(12) default NULL,
   `uid` varchar(12) default NULL,
   `content_id` int(12) NOT NULL,
+  `bnum` int(12) NOT NULL,
   `tag` varchar(256) NOT NULL,
   `namespace` varchar(256) NOT NULL,
   `predicate` varchar(256) NOT NULL,
