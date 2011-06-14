@@ -33,7 +33,8 @@ class MachineTag {
 			return $this->_mt;
 		}
 		
-		function namespace(){
+		// namespace() is a reserved keyword as of PHP 5.3.
+		function name_space(){
 			return $this->_namespace;
 		}
 
